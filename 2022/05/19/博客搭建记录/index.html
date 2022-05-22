@@ -9,14 +9,15 @@
   <meta name="description" content="2022.5.19今天是个带晴天，hzl闲的蛋疼决定重新搭一个博客。虽然服务器在国外就很蛋疼啦，不过用来放自己日常生活、学习的记录足够了。 下面简单记录一下自己搭建该博客的过程和坑吧。 1. 环境准备一个博客需要什么？一个有趣的灵魂和存放灵魂的容器。现在一个有趣的灵魂已经有啦，那么肯定要寻找足够配得上这个有趣灵魂的容器啦。 那么怎么评价一个容器够不够优秀呢，首先要看它的性能（耐不耐折腾），其次看它">
 <meta property="og:type" content="article">
 <meta property="og:title" content="嘿！终于等到你！">
-<meta property="og:url" content="http://example.com/2022/05/19/test/index.html">
+<meta property="og:url" content="http://example.com/2022/05/19/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%AE%B0%E5%BD%95/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="2022.5.19今天是个带晴天，hzl闲的蛋疼决定重新搭一个博客。虽然服务器在国外就很蛋疼啦，不过用来放自己日常生活、学习的记录足够了。 下面简单记录一下自己搭建该博客的过程和坑吧。 1. 环境准备一个博客需要什么？一个有趣的灵魂和存放灵魂的容器。现在一个有趣的灵魂已经有啦，那么肯定要寻找足够配得上这个有趣灵魂的容器啦。 那么怎么评价一个容器够不够优秀呢，首先要看它的性能（耐不耐折腾），其次看它">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-05-18T19:00:57.000Z">
-<meta property="article:modified_time" content="2022-05-22T00:56:42.861Z">
+<meta property="article:modified_time" content="2022-05-22T13:21:24.369Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="技术">
+<meta property="article:tag" content="博客">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
@@ -74,9 +75,9 @@
 </header>
 
       <div class="outer">
-        <section id="main"><article id="post-test" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-博客搭建记录" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
-    <a href="/2022/05/19/test/" class="article-date">
+    <a href="/2022/05/19/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%AE%B0%E5%BD%95/" class="article-date">
   <time class="dt-published" datetime="2022-05-18T19:00:57.000Z" itemprop="datePublished">2022-05-19</time>
 </a>
     
@@ -98,26 +99,34 @@
       
         <h1 id="2022-5-19"><a href="#2022-5-19" class="headerlink" title="2022.5.19"></a>2022.5.19</h1><p>今天是个带晴天，hzl闲的蛋疼决定重新搭一个博客。虽然服务器在国外就很蛋疼啦，不过用来放自己日常生活、学习的记录足够了。</p>
 <p>下面简单记录一下自己搭建该博客的过程和坑吧。</p>
-<h2 id="1-环境准备"><a href="#1-环境准备" class="headerlink" title="1. 环境准备"></a>1. 环境准备</h2><p>一个博客需要什么？一个有趣的灵魂和存放灵魂的容器。现在一个有趣的灵魂已经有啦，那么肯定要寻找足够配得上这个有趣灵魂的容器啦。</p>
+<h2 id="1-环境准备"><a href="#1-环境准备" class="headerlink" title="1. 环境准备"></a>1. 环境准备</h2><p><strong>一个博客需要什么？一个有趣的灵魂和存放灵魂的容器。现在一个有趣的灵魂已经有啦，那么肯定要寻找足够配得上这个有趣灵魂的容器啦。</strong></p>
 <p>那么怎么评价一个容器够不够优秀呢，首先要看它的性能（耐不耐折腾），其次看它的外表（好看才是王道！），最后看它的价格。（白嫖万岁！）</p>
 <p>现在hzl找到了一个性价比无穷大的容器（因为它完全不需要花钱，不过除数严格不能为0啊），它基于github仓库+hexo博客框架。</p>
 <hr>
-<p>首先看github仓库的配置：</p>
+<p><strong>首先看github仓库的配置</strong>：</p>
 <ol>
 <li>新建一个仓库命名为zily-1213.github.io，<strong>必须要这样命名哦</strong></li>
 <li>在命令行使用指令<code>ssh-keygen -t rsa -C &quot;注释文字&quot;</code>生成SSH秘钥。然后在github用户的setting里添加SSH秘钥，这样子就实现了可以从命令行对github的加密登录。（SSH可以理解为一种网络协议，允许计算机加密登录到远程计算机，虽然这一步骤我认为好像没起到啥作用）</li>
 </ol>
 <hr>
-<p>然后是Hexo的安装与配置</p>
-
+<p><strong>然后是Hexo的安装与配置</strong></p>
+<ol>
+<li>在终端运行指令<code>npm install -g hexo-cli</code>进行hexo的全局安装。</li>
+<li>创建一个blog文件夹，用于存放hexo框架、博客文章等文件。</li>
+<li>终端运行npm指令生成相关依赖环境。</li>
+<li>在文件夹中执行hexo init命令，生成hexo相关文件，最重要的是source文件夹，其中存放的是会被post到github仓库中的博客文件。</li>
+<li>hexo相关指令操作见参考的博客：<a target="_blank" rel="noopener" href="https://segmentfault.com/a/1190000038619366">https://segmentfault.com/a/1190000038619366</a></li>
+</ol>
+<p>然后我们的博客就已经具备雏形啦，<strong>bravo</strong>！</p>
+<h2 id="2-图床的搭建"><a href="#2-图床的搭建" class="headerlink" title="2.图床的搭建"></a>2.图床的搭建</h2>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2022/05/19/test/" data-id="cl3f6rgtf00019cw03ezi681l" data-title="嘿！终于等到你！" class="article-share-link">分享</a>
+      <a data-url="http://example.com/2022/05/19/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%AE%B0%E5%BD%95/" data-id="cl3hbwl1q0001h4w02do028xc" data-title="嘿！终于等到你！" class="article-share-link">分享</a>
       
       
       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%8A%80%E6%9C%AF/" rel="tag">技术</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%8D%9A%E5%AE%A2/" rel="tag">博客</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%8A%80%E6%9C%AF/" rel="tag">技术</a></li></ul>
 
     </footer>
   </div>
@@ -125,7 +134,7 @@
     
 <nav id="article-nav">
   
-    <a href="/2022/05/21/Tuchuang_test/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2022/05/20/%E5%9B%BE%E5%BA%8A%E8%AE%BE%E7%BD%AE/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption">前一篇</strong>
       <div class="article-nav-title">
         
@@ -152,7 +161,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">标签</h3>
     <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/DNS/" rel="tag">DNS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%9B%BE%E7%89%87/" rel="tag">图片</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%8A%80%E6%9C%AF/" rel="tag">技术</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%B5%8B%E8%AF%95/" rel="tag">测试</a></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/DNS/" rel="tag">DNS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%8D%9A%E5%AE%A2/" rel="tag">博客</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%9B%BE%E7%89%87/" rel="tag">图片</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%8A%80%E6%9C%AF/" rel="tag">技术</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%B5%8B%E8%AF%95/" rel="tag">测试</a></li></ul>
     </div>
   </div>
 
@@ -162,7 +171,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">标签云</h3>
     <div class="widget tagcloud">
-      <a href="/tags/DNS/" style="font-size: 10px;">DNS</a> <a href="/tags/%E5%9B%BE%E7%89%87/" style="font-size: 10px;">图片</a> <a href="/tags/%E6%8A%80%E6%9C%AF/" style="font-size: 20px;">技术</a> <a href="/tags/%E6%B5%8B%E8%AF%95/" style="font-size: 10px;">测试</a>
+      <a href="/tags/DNS/" style="font-size: 10px;">DNS</a> <a href="/tags/%E5%8D%9A%E5%AE%A2/" style="font-size: 10px;">博客</a> <a href="/tags/%E5%9B%BE%E7%89%87/" style="font-size: 10px;">图片</a> <a href="/tags/%E6%8A%80%E6%9C%AF/" style="font-size: 20px;">技术</a> <a href="/tags/%E6%B5%8B%E8%AF%95/" style="font-size: 10px;">测试</a>
     </div>
   </div>
 
@@ -188,11 +197,11 @@
           </li>
         
           <li>
-            <a href="/2022/05/21/Tuchuang_test/">测试一下Gituhub+sm.ms+Picgo搭建的图床</a>
+            <a href="/2022/05/20/%E5%9B%BE%E5%BA%8A%E8%AE%BE%E7%BD%AE/">测试一下Gituhub+sm.ms+Picgo搭建的图床</a>
           </li>
         
           <li>
-            <a href="/2022/05/19/test/">嘿！终于等到你！</a>
+            <a href="/2022/05/19/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%AE%B0%E5%BD%95/">嘿！终于等到你！</a>
           </li>
         
       </ul>
